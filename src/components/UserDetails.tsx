@@ -20,7 +20,7 @@ class UserDetails extends Component<{card: any}>  {
     };
 
     componentWillMount() {
-        fetch('https://swapi.co/api/people/' + this.props.card)
+        fetch('https://swapi.dev/api/people/' + this.props.card)
             .then(response => response.json())
             .then(response => this.setState({
                 cards: response,
