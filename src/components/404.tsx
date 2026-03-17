@@ -1,13 +1,16 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const Lost = () => {
-    return (
-        <div>
-            <h1>Something went wrong. Try to start your journey from the page below:</h1>
-            <p><Link to="/">Homepage</Link></p>
-        </div>
-    );
+const Lost: React.FC = () => {
+  return (
+    <div>
+      <h1>404 - Page Not Found</h1>
+      <p>
+        The page you are looking for does not exist. Return to{' '}
+        <Link to="/">Home</Link>.
+      </p>
+    </div>
+  );
 };
 
 export default Lost;
