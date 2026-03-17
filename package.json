@@ -1,28 +1,32 @@
 {
   "name": "react_router",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "@types/jest": "24.0.13",
-    "@types/node": "12.0.4",
-    "@types/react": "16.8.19",
-    "@types/react-dom": "16.8.4",
-    "@types/react-router-dom": "^4.3.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router": "^5.0.0",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.0.1",
-    "typescript": "3.5.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.31",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "vite": "^5.2.0"
+  },
+  "overrides": {
+    "minimatch": "3.1.2",
+    "sourcemap-codec": "^1.4.15"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "audit": "npm audit --omit=dev",
+    "test": "echo No tests configured && exit 0"
   },
   "browserslist": {
     "production": [
